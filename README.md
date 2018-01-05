@@ -45,3 +45,37 @@ git reset af461fa --hard
 
 > We don't have to do git add while undoing
 ```
+# Branches :dog2:
+```
+git branch feature-1 -> create a new branch called 'feature-1'
+git branch -a -> lists the branches
+git checkout feature-1 -> runs that branch
+git branch -d feature-1 -> deletes the branch if it has already merged
+git branch -D feature-1 -> deletes the branch. merge is not necessary
+git checkout -b feature-1 -> creates a branch and run that branch
+      !!! DO NOT SAVE !!!
+```
+# Merging Branches :snail:
+```
+git merge feature-1 -> while on master branch, merges the master branch and feature-1
+If there is a conflict, message is not essential after fix it,while git commit
+```
+# Github :mouse:
+```
+1) Pushing to Github while already in local
+git status. if there is nothing to commit, you can push to Github
+
+git push https://github.com/canerturkmen0/git-test.git master (repo link and branch name)
+
+git remote add originGitTest https://github.com/canerturkmen0/git-test.git
+(we gave a name instead of remote git repo link)
+
+if you will make remote push, commit add push github remote repo
+```
+```
+2) there is no repo on Github
+git clone https://github.com/canerturkmen0/another-git-test.git
+then you can go with cd and use it
+
+git remote -v
+```
